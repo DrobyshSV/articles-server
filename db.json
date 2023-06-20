@@ -1,16 +1,4 @@
 {
-  "posts": [
-    {
-      "id": "1",
-      "title": "json-server",
-      "userId": "1"
-    },
-    {
-      "id": "2",
-      "title": "json-server",
-      "userId": "2"
-    }
-  ],
   "articles": [
     {
       "id": "1",
@@ -1382,57 +1370,70 @@
     }
   ],
   "comments": [
-    {
-      "id": "1",
-      "text": "some comment",
-      "articleId": "1",
-      "userId": "1"
-    },
-    {
-      "id": "2",
-      "text": "some comment 2",
-      "articleId": "1",
-      "userId": "1"
-    },
-    {
-      "id": "3",
-      "text": "some comment 3",
-      "articleId": "1",
-      "userId": "1"
-    },
-    {
-      "articleId": "1",
-      "userId": "1",
-      "text": "11112222",
-      "id": "BY09veT"
-    },
-    {
-      "articleId": "1",
-      "userId": "2",
-      "text": "3344",
-      "id": "z1BzjBK"
-    },
-    {
-      "articleId": "4",
-      "userId": "1",
-      "text": "csc",
-      "id": "8aXqsJn"
-    }
   ],
   "users": [
     {
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN",
+      "roles": [
+        "ADMIN"
+      ],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": true,
+        "isAppRedesigned": true
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false,
+        "isArticlesPageWasOpened": true
+      },
       "avatar": "https://thumbs.dreamstime.com/b/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER",
+      "roles": [
+        "USER"
+      ],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": false
+      },
+      "avatar": "https://w7.pngwing.com/pngs/140/492/png-transparent-user-avatar-playerunknown-s-battlegrounds-cryptocurrency-mixer-others.png",
+      "jsonSettings": {
+        "theme": "app_light_theme",
+        "isArticlesPageWasOpened": true
+      }
+    },
+    {
+      "id": "3",
+      "username": "manager",
+      "password": "123",
+      "roles": [
+        "MANAGER"
+      ],
+      "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": false
+      },
       "avatar": "https://w7.pngwing.com/pngs/140/492/png-transparent-user-avatar-playerunknown-s-battlegrounds-cryptocurrency-mixer-others.png"
+    },
+    {
+      "id": "4",
+      "username": "vladimir",
+      "password": "123",
+      "roles": [
+        "USER"
+      ],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": true
+      },
+      "avatar": null
     }
   ],
   "profile": [
@@ -1444,19 +1445,75 @@
       "currency": "BYN",
       "country": "Belarus",
       "city": "Minsk",
-      "username": "admin123",
+      "username": "admin",
       "avatar": "https://thumbs.dreamstime.com/b/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg"
     },
     {
       "id": "2",
       "firstname": "Viktar",
       "lastname": "Drobysh",
-      "age": 46,
+      "age": 64,
       "currency": "BYN",
       "country": "Belarus",
       "city": "Minsk",
       "username": "admin123",
       "avatar": "https://w7.pngwing.com/pngs/140/492/png-transparent-user-avatar-playerunknown-s-battlegrounds-cryptocurrency-mixer-others.png"
+    },
+    {
+      "id": "3",
+      "firstname": "Timoha",
+      "lastname": "Drobysh",
+      "age": 2,
+      "currency": "BYN",
+      "country": "Belarus",
+      "city": "Minsk",
+      "username": "admin123",
+      "avatar": ""
+    },
+    {
+      "id": "4",
+      "firstname": "Vladimir",
+      "lastname": "Drobysh",
+      "age": 66,
+      "currency": "BYN",
+      "country": "Belarus",
+      "city": "Minsk",
+      "username": "admin123",
+      "avatar": ""
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "title": "Notice 1",
+      "description": "Something 1",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "title": "Notice 2",
+      "description": "Something 2",
+      "userId": "1",
+      "href": "http://localhost:3000/admin"
+    },
+    {
+      "id": "3",
+      "title": "Notice 3",
+      "description": "Something 3",
+      "userId": "1",
+      "href": "http://localhost:3000/admin"
+    },
+    {
+      "id": "4",
+      "title": "Notice 4",
+      "description": "Something 4",
+      "userId": "1"
+    },
+    {
+      "id": "5",
+      "title": "Notice 5",
+      "description": "Something 4",
+      "userId": "2"
     }
   ]
 }
